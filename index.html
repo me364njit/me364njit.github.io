@@ -1,1 +1,234 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="https://github.com/me364njit">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hi, I'm <span>Muhab</span> Elgamal</h1>
+        </div>
+    </div>
+</div>
+<!---------- about------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a dedicated Computer Science graduate from NJIT with a strong 
+                foundation in both theoretical concepts and practical application. 
+                My educational journey has equipped me with a diverse skill set that 
+                spans a wide range of areas within the field of computer science. My 
+                academic journey at NJIT and my diverse skill set encompassing algorithms, 
+                languages, data analysis, and app development makes me highly equipped and 
+                versatile to take on challenges in the tech industry.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building iOS/Android apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Project Manager</span><br>Demonstrated strong teamwork and communication skills through 
+                            collaborative coding and project design efforts.</li>
+                        <li><span>iOS Development</span><br>Collaborated on a team project to develop an iOS Prox App using 
+                            Swift and Firebase, enhancing user engagement.</li>
+                        <li><span>Cryptography</span><br>Successfully completed projects involving RSA encryption and decryption, 
+                            demonstrating cryptography skills.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021-2023</span><br>B.S. CS from NJIT</li>
+                        <li><span>2019-2021</span><br>A.S. CS from Brookdale CC</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------services------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I craft beautiful, user-centric websites from start to finish. 
+                    Ensuring seamless functionality across all devices, also offering 
+                    ongoing maintenance and search engine optimization to keep your site 
+                    current and boost online success.</p>
+                    <a href="#" class="btn btn3">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Data Analysis</h2>
+                <p>Elevate your insights with our data analysis services. 
+                    Unlock the power of your data, providing valuable conclusions 
+                    and actionable recommendations to drive informed decision-making.</p>
+                    <a href="https://github.com/me364njit/DataAnalysisPrediction/tree/main" class="btn btn3">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Turn your app idea into reality with my app design services. 
+                    I design and craft visually engaging, user-friendly interfaces 
+                    that enhance user experiences, focusing on creating intuitive, 
+                    stunning designs that captivate your audience and bring your app 
+                    vision to life.</p>
+                    <a href="https://github.com/me364njit/CarDealershipApp/tree/main/DealershipProject" class="btn btn3">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------portfolio------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Crptography</h3>
+                    <p>Encryptor and decryptor for messages.</p>
+                    <a href="https://github.com/me364njit/Encryptor-and-Decryptor"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Data Analysis</h3>
+                    <p>Forecasting the victors of every round in the 2021 NCAA bracket based on the provided dataset for each team.</p>
+                    <a href="https://github.com/me364njit/Python-Data-Insights-March-Madness-Prediction-and-Sports-Analytics/tree/main"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>iOS Social Media App</h3>
+                    <p>Helps connect strangers in close proximity in public settings.</p>
+                    <a href="https://github.com/me364njit/Prox"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/me364njit" class="btn">See more</a>
+    </div>
+</div>
+<!-------------contact--------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> me354@njit.edu</p>
+                <p><i class="fas fa-phone-square-alt"></i> 732-567-9650</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/muhab.elgamal/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/moobie15"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/moobie15/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/muhab-elgamal-6964a6263"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/MuhabElgamal-Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Muhab <i class="fa-brands fa-sketch"></i></i></p>
+    </div>
+</div>
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    } 
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwZMslS9ztXzZgozSym8hIVvZOWHWOs9jXGetDCnvsfjMR9wG2V7GB7sIDqsdT7TmAOYQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {    
+                msg.innerHTML = "Message sent successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
